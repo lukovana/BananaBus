@@ -6,6 +6,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import DriverScreen from '../screens/DriverScreen';
 import SchoolScreen from '../screens/SchoolScreen';
+import SchoolsScreen from '../screens/SchoolsScreen';
 
 
 const config = Platform.select({
@@ -74,10 +75,30 @@ SchoolStack.navigationOptions = {
 };
 SchoolStack.path='';
 
+const SchoolsStack = createStackNavigator(
+  {
+    Schools:SchoolsScreen,
+  },
+  config
+);
+
+SchoolsStack.navigationOptions = {
+  tabBarLabel:'School Info',
+  tabBarIcon: ({focused}) => (
+    <TabBarIcon focused={focused} name={
+      Platform.OS === 'ios'
+        ? `ios-information-circle${focused ? '' : '-outline'}`
+        : 'md-information-circle'
+    } />
+  ),
+};
+SchoolsStack.path='';
+
 const tabNavigator = createBottomTabNavigator({
   HomeStack,
   DriverStack,
-  SchoolStack
+  SchoolStack,
+  SchoolsScreen,
 });
 
 tabNavigator.path = '';
