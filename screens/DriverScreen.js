@@ -13,10 +13,10 @@ export default class DriverScreen extends Component{
                 <ScrollView>
                     <View style = {DriverStyle.view}>
                         <Text style={DriverStyle.text}> 
-                            <Image style={DriverStyle.image} source={require('../assets/images/mattuaMiddle.jpg')}/> Mattua Middle
+                            <Image style={DriverStyle.image} source={require('../assets/images/mattuaMiddle.jpg')}/> 
                         </Text>
                         <Button 
-                            title="Click"
+                            title="Mattua Middle"
                             onPress={() => navigate('School')}
                         />
                     </View>
@@ -48,6 +48,7 @@ const DriverStyle = StyleSheet.create ({
     view: {
         backgroundColor:"#F5F5F5",
         flex: 1,
+        flexDirection:'row',
         marginTop: 20,
         marginHorizontal: 10,
         borderRadius:20,

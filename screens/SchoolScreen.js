@@ -25,7 +25,7 @@ const SchoolScreen = () => {
 };
 
 SchoolScreen.navigationOptions = {
-    title: 'Schools',
+    title: 'School Info',
 };
 
 
