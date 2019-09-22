@@ -11,65 +11,43 @@ export default class SchoolsScreen extends Component{
         return (
             <ScrollView >
             <View style = {SchoolStyle.schoolsView}>
-                <Image style = {SchoolStyle.Image} source={require('../assets/images/mattuaMiddle.jpg')} />
+                <Image style = {SchoolStyle.Image} source={require('../assets/images/icon2.png')} />
                 
                 <Button style = {SchoolStyle.schoolButton}
-                  title="Mattua Elementary"
+                  title="Heavy Traffic. Pick up delayed 2 minutes"
                 />
             </View>
 
             <View style = {SchoolStyle.schoolsView}>
-                <Image style = {SchoolStyle.Image} source={require('../assets/images/school1.jpg')} />
+                <Image style = {SchoolStyle.Image} source={require('../assets/images/icon2.png')} />
                 <Button  style = {SchoolStyle.schoolButton}
-                    title="Lopez Elementary "
+                    title="Timmy has been picked up from school"
                    
                 />
             </View>
 
             <View style = {SchoolStyle.schoolsView}>
-                <Image style = {SchoolStyle.Image} source={require('../assets/images/school2.jpg')} />
+                <Image style = {SchoolStyle.Image} source={require('../assets/images/icon2.png')} />
                 <Button  style = {SchoolStyle.schoolButton}
-                    title="Lukov Middle "
+                    title="Timmy was dropped off at the house "
                    
                 />
             </View>
 
-            <View style = {SchoolStyle.schoolsView}>
-                <Image style = {SchoolStyle.Image} source={require('../assets/images/school3.jpg')} />
-                <Button  style = {SchoolStyle.schoolButton}
-                    title="Somerset Academy "
-                   
-                />
-            </View>
-
-            <View style = {SchoolStyle.schoolsView}>
-                <Image style = {SchoolStyle.Image} source={require('../assets/images/school4.jpg')} />
-                <Button  style = {SchoolStyle.schoolButton}
-                    title="Pines Charter"
-                   
-                />
-            </View>
         </ScrollView>
         );
     }
 }
-
-
 SchoolsScreen.navigationOptions = {
-    title: 'List of Schools',
+    title: 'Notifications',
 };
-
-
-
-
 
 const SchoolStyle = StyleSheet.create ({
 
-
     schoolsView: {
-        flex: 1,
-        flexDirection:'row',
-        marginTop: 20,
+      
+    
+        marginTop: 40,
         marginHorizontal: 10,
         borderRadius:20,
         

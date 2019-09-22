@@ -6,9 +6,9 @@ const SchoolScreen = () => {
     return (
         <ScrollView >
             <View style = {SchoolStyle.view}>
-                <Text style = {SchoolStyle.title}>Henderson High School </Text>
-                <Text style = {SchoolStyle.textRegular}> 7:30AM - 2:30PM</Text>
-                <Text style = {SchoolStyle.textRegular}> 301 Main St</Text>
+                <Text style = {SchoolStyle.title}>Mattua Middle </Text>
+                <Text style = {SchoolStyle.textRegular}>School Hours: 7:30AM - 2:30PM</Text>
+                <Text style = {SchoolStyle.textRegular}>Address:  301 Main St</Text>
                 <View style = {SchoolStyle.viewInfo}>
                     <Text style = {SchoolStyle.textRegular}> Students</Text>
                     <Text style = {SchoolStyle.textRegular}> Route 1503</Text>
@@ -31,12 +31,13 @@ SchoolScreen.navigationOptions = {
 
 const SchoolStyle = StyleSheet.create ({
     title: {
-        marginTop: 10,
+        margin: 20,
         fontSize: 20,
+        textAlign: 'center',
     },
     textRegular: {
-        marginTop: 10,
-        fontSize: 13,
+        margin: 10,
+        fontSize: 15,
     },
     line : {
         borderBottomColor: '#c4c4c4',

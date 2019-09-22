@@ -45,7 +45,7 @@ const DriverStack = createStackNavigator(
 );
 
 DriverStack.navigationOptions = {
-  tabBarLabel:'Home Driver',
+  tabBarLabel:'Schools',
   tabBarIcon: ({focused}) => (
     <TabBarIcon focused={focused} name={
       Platform.OS === 'ios'
