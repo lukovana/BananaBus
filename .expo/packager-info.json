@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 5713,
-  "expoServerNgrokUrl": "https://ft-p2t.anonymous.bananabus.exp.direct",
-  "packagerNgrokUrl": "https://packager.ft-p2t.anonymous.bananabus.exp.direct",
-  "ngrokPid": 5762
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }
